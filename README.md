@@ -1,43 +1,37 @@
-*Volunteer IT Infrastructure Specialist** | Keiser University, Tallahassee, FL | June 2026 – September 2026
+# 🖥️ Keiser University — Seahawk Cyber-Sprint IT Infrastructure Project
+
+**Volunteer IT Infrastructure Specialist** | Keiser University, Tallahassee, FL | June 2026 – September 2026
 
 ---
 
 ## 📋 Project Overview
 
-The **Seahawk Cyber-Sprint** is a hands-on IT infrastructure initiative at Keiser University where I served as a volunteer IT Infrastructure Specialist. The project involved building and maintaining a fully operational technology lab from scratch — from component-level hardware assembly and projector repair to complete network configuration and deployment.
-
-This repository documents the work performed, technologies used, and lessons learned throughout the deployment.
+The **Seahawk Cyber-Sprint** is a hands-on IT infrastructure initiative at Keiser University (cybersecurity hackathon September 11–13, 2026) where I served as a volunteer IT Infrastructure Specialist. The project involved building and maintaining a fully operational technology lab from scratch — from component-level hardware assembly and projector repair to complete network configuration and deployment.
 
 ---
 
 ## 🛠️ What Was Done
 
 ### Hardware Assembly & Deployment
-- Assembled **20+ Dell desktop computers** from component level: BIOS/UEFI configuration, RAM installation, CPU cooler mounting, storage drive setup, and PSU integration
-- Inspected and diagnosed motherboard-level issues (Dell OptiPlex and Tower series) — SATA ports, RAM slots, CMOS battery, chipset components
+- Assembled **20+ Dell desktop computers** from component level: BIOS/UEFI configuration, RAM installation, CPU cooler mounting, storage drive setup (Seagate Barracuda 250GB), and PSU integration
+- Inspected and diagnosed motherboard-level issues across multiple Dell board generations (MS0520 and others) — SATA ports, RAM slots, CMOS battery, chipset components
+- Installed and replaced optical drives (DVD-ROM), routed SATA data/power cables, and managed cable harnesses
 - Deployed **Windows 10/11** and **Linux Mint** operating systems via bootable USB across all machines
 - Performed hardware diagnostics using ESD-safe procedures, compressed air cleaning, and component bench testing
 
 ### Projector Repair & Maintenance — NEC V260 DLP
 - Performed **full component-level disassembly** of NEC NP-V260 DLP projectors (manufactured June 2011, Lamp Type: NP13LP)
-- Removed and inspected the **lamp assembly (NP13LP)**, lamp door/cover, and housing
-- Removed and inspected the **main DLP board** (Texas Instruments DLP chipset) and **I/O board** (Audio In, Computer In, VGA Monitor Out, PC Control, S-Video)
-- Documented internal wiring, optical path (lens assembly, cooling fans), and connector layout for reassembly
-- Identified fault conditions and performed maintenance on projector internals
+- Removed and inspected the **lamp assembly (NP13LP)**, lamp door/cover, and bulb housing
+- Removed and inspected the **main DLP board** (Texas Instruments DLP chipset) and **I/O board** (VGA In/Out, RS-232, S-Video, Audio)
+- Documented internal wiring, optical path (lens assembly, cooling fans), and connector layout
 - Reassembled units and verified functionality
 
 ### Network Infrastructure
-- Configured and deployed **Cisco 2500 Series** routers/switches and **Cisco Catalyst 1900 Series** switches
+- Configured and deployed **Cisco 2500 Series** and **Cisco Catalyst 1900 Series** switches, plus **Allied Telesyn CentreCOM FH724SW**
 - Set up **DHCP** and **DNS** services for the lab network
 - Configured **VLANs** for network segmentation
 - Performed physical cabling and cable management on rack-mounted equipment
-- Executed port-by-port status verification and documented all results with physical labels
-- Performed comprehensive network testing: connectivity verification, ping/tracert analysis
-
-### Documentation
-- Created technical documentation, troubleshooting guides, and system specifications
-- Labeled all network equipment with operational status ("W ON", "ALL PORTS OK", "Ports 4 8 12 off")
-- Produced hardware inventory and configuration records for ongoing support
+- Executed port-by-port status verification and labeled all equipment ("W ON", "ALL PORTS OK", "Ports 4 8 12 off")
 
 ---
 
@@ -46,162 +40,266 @@ This repository documents the work performed, technologies used, and lessons lea
 | Category | Tools / Equipment |
 |---|---|
 | Networking | Cisco 2500 Series, Cisco Catalyst 1900, Allied Telesyn CentreCOM FH724SW |
-| Protocols | TCP/IP, DHCP, DNS, VLANs, LAN |
+| Protocols | TCP/IP, DHCP, DNS, VLANs |
 | Operating Systems | Windows 10, Windows 11, Linux Mint |
-| Desktop Hardware | Dell OptiPlex / Tower series, RAM, CPU coolers, HDDs (Seagate), PSUs |
+| Desktop Hardware | Dell OptiPlex/Tower, RAM, CPU coolers, Seagate Barracuda HDDs, DVD-ROM, PSUs |
 | AV / Projectors | NEC NP-V260 DLP (NP13LP lamp, TI DLP chipset, VGA/S-Video I/O) |
-| Safety Equipment | ESD wrist strap, anti-static mat, multimeter, compressed air |
-| Network Testing | ping, ipconfig, tracert, port status verification |
-| Other Lab Equipment | 3D Printers, FPV/consumer drones (IoT section) |
+| Safety | ESD wrist strap, anti-static mat, compressed air, screwdriver set |
+| Other | 3D Printers, FPV/consumer drones (IoT section) |
 
 ---
 
 ## 📸 Lab Photos
 
-### Computer Inventory — Pre-Deployment
-> 20+ desktop units staged and ready for processing. Mixed fleet of Dell tower and small form factor units.
-
-![Computer Inventory](photos/computer-inventory.jpg)
-
----
-
-### Hardware Assembly Workbench — General
-> Open desktop chassis during component installation. ESD wrist strap in use. Multimeter and soldering equipment visible.
-
-![Hardware Workbench](photos/hardware-workbench.jpg)
-
----
-
-### Dell Motherboard — Bench Assembly
-> Dell desktop motherboard outside the case during inspection. CPU cooler, Seagate HDD, and PSU visible alongside ESD mat and cleaning brush.
-
-![Dell Bench Assembly](photos/desktop-bench-assembly.jpg)
-
----
-
-### Dell Desktop — Interior Hardware (Motherboard & RAM)
-> Dell OptiPlex motherboard inside chassis. RAM slots, SATA connectors (blue/red), 24-pin ATX power connector, and CPU cooler fan visible. Full cable bundle routed along chassis wall.
-
-![Dell Desktop Interior 1](photos/desktop-interior-ram.jpg)
-
----
-
-### Dell Desktop — Motherboard Close-Up
-> Dell motherboard detail: chipset, CMOS battery, SATA ports, PCIe slots, and Dell.com branding. Component-level inspection to verify functionality before OS deployment.
-
-![Dell Motherboard Close-up](photos/desktop-motherboard-closeup.jpg)
-
----
-
-### Dell Tower — Full Interior View
-> Full tower interior with HDD installed (Seagate), CPU cooler fan, cable management, and motherboard. Ready for OS deployment.
-
-![Dell Tower Interior](photos/desktop-tower-full.jpg)
-
----
-
-### NEC V260 DLP Projector — Exterior
-> NEC NP-V260 DLP projector. Lamp housing open during maintenance. Model manufactured June 2011.
-
-![NEC Projector Exterior](photos/projector-exterior.jpg)
-
----
-
-### NEC V260 — Rear I/O Panel
-> Rear panel connections: Audio In, Computer In (VGA), Monitor Out (COMP), PC Control (RS-232), S-Video In, Video In, AC power input. Model: NP-V260 1601691EB, Manufactured June 2011.
-
-![NEC Projector Rear I/O](photos/projector-rear-io.jpg)
-
----
-
-### NEC V260 — Top Panel (Lamp Compartment Open)
-> Top view of NEC V260 with lamp door removed. Controls visible: Power, Status, Lamp indicators; Source, Auto Adj., Exit, Enter, Menu, Volume, Zoom/Focus. Lamp Type: NP13LP.
-
-![NEC Projector Top](photos/projector-nec-v260-top.jpg)
-
----
-
-### NEC V260 — Lamp Assembly Removed
-> NP13LP lamp module fully removed from projector housing. Connector visible at top. Lamp is the primary consumable in DLP projectors.
-
-![NEC Lamp Assembly](photos/projector-lamp-assembly.jpg)
-
----
-
-### NEC V260 — Lamp Bulb Detail
-> Close-up of the NP13LP DLP lamp bulb held during inspection. Reflector and arc lamp visible. ESD wrist strap worn throughout disassembly.
-
-![NEC Lamp Bulb](photos/projector-lamp-bulb.jpg)
-
----
-
-### NEC V260 — Lamp Door Cover
-> Lamp door (black plastic cover) removed from housing. Caution labels indicate mercury vapor content — handled per safety guidelines.
-
-![NEC Lamp Cover](photos/projector-lamp-cover.jpg)
-
----
-
-### NEC V260 — Full Interior Disassembly
-> Projector fully open: optical engine visible with lens assembly, cooling fans, wiring harness, and sensor boards. Main PCB and I/O board removed for inspection.
-
-![NEC Projector Interior](photos/projector-interior.jpg)
-
----
-
-### NEC V260 — Main DLP Board
-> Main projector PCB featuring Texas Instruments DLP chipset. NEC branding visible. Board manages image processing, power distribution, and I/O signal routing.
-
-![NEC DLP Main Board](photos/projector-dlp-board.jpg)
-
----
-
-### NEC V260 — I/O Board
-> Input/output board removed for inspection. Handles all external signal connections (VGA, RS-232, S-Video, Audio). Connects to main board via ribbon connectors.
-
-![NEC I/O Board](photos/projector-io-board.jpg)
-
----
-
-### NEC V260 — Reassembly
-> Projector during reassembly phase. Main board reinstalled, lens assembly and optical path intact, wiring reconnected before housing closure.
-
-![NEC Reassembly](photos/projector-reassembly.jpg)
-
----
-
 ### Lab Overview
-> Active lab workspace with Dell monitors, NEC projector configured, network topology diagram on wall, and Fluke Networks reference materials.
-
 ![Lab Overview](photos/lab-overview.jpg)
+> Active lab with projector, network diagram on wall, keyboards, and workstations. Multiple units in various stages of deployment.
 
 ---
 
-### Network Rack — Equipment View
-> Rack-mounted network equipment: Allied Telesyn 24-port switch (top), two Cisco 2500 Series units, and Cisco Catalyst 1900 Series (bottom) with active port LEDs.
+### Computer Inventory — Pre-Deployment
+![Computer Inventory](photos/computer-inventory.jpg)
+> 20+ Dell desktop units stacked and staged in the computer room, ready for processing.
 
+---
+
+### Hardware Workbench
+![Hardware Workbench](photos/hardware-workbench.jpg)
+> Motherboard outside the case during component testing. PSU, HDD, and ESD mat visible. Bench setup for hardware diagnostics.
+
+---
+
+### Hardware Workbench — Tools
+![Hardware Workbench Tools](photos/hardware-workbench-tools.jpg)
+> Full workbench setup: Dell case open with ESD strap, screwdrivers, multimeter, magnifying glass, and soldering iron.
+
+---
+
+### Dell Desktop — Full Interior (Classroom)
+![Dell Classroom Full](photos/desktop-classroom-full.jpg)
+> Dell desktop fully open: Seagate HDD, optical drive, Dell motherboard, PSU, and blue SATA cable visible. Classroom with more units in background.
+
+---
+
+### Dell Desktop — Interior Open
+![Dell Classroom Open](photos/desktop-classroom-open.jpg)
+> Another Dell unit open in the classroom workspace. Blue Ethernet cable connected and ready for OS deployment.
+
+---
+
+### Dell Desktop — Motherboard MS0520
+![Dell Motherboard MS0520](photos/desktop-motherboard-ms0520.jpg)
+> Dell motherboard (Board ID: MS0520). Yellow front-panel connector, CMOS/RTC lithium battery, and CMOS password jumper (1-2: Clear / 2-3: Normal Default). Multiple Dell generations serviced.
+
+---
+
+### Dell Desktop — Motherboard I/O Close-Up
+![Dell Motherboard IO](photos/desktop-motherboard-io-closeup.jpg)
+> Dell motherboard showing blue VGA rear port, SATA slots, CMOS battery, and I/O chipset components. Red/black power wire routed alongside PCB.
+
+---
+
+### Dell Desktop — Motherboard (Dell Branding)
+![Dell Motherboard](photos/desktop-motherboard-dell.jpg)
+> Dell motherboard with "DELL" branding visible on PCB. CMOS coin battery, chipset, and rear I/O bracket visible.
+
+---
+
+### Dell Desktop — Motherboard with CPU Fan
+![Dell Motherboard CPU Fan](photos/desktop-motherboard-cpu-fan.jpg)
+> Dell motherboard with CPU cooler fan installed. Full PCB visible including PCIe slots, SATA ports, RAM DIMM slots, and PSU connectors.
+
+---
+
+### Dell Desktop — Motherboard SATA Ports
+![Dell SATA Ports](photos/desktop-motherboard-sata-ports.jpg)
+> Close-up of Dell motherboard showing blue and red SATA connectors (SATA 3Gb/s and 6Gb/s), FAN_SYS header, and chipset ICs.
+
+---
+
+### Dell Desktop — 24-Pin ATX Connector
+![Dell 24-pin ATX](photos/desktop-motherboard-24pin.jpg)
+> 24-pin ATX power connector routed to motherboard. PCIe x16 and x1 slots visible. PSU wiring harness bundled on right side.
+
+---
+
+### Dell Desktop — SATA Cable Routing
+![Dell SATA Cable Routing](photos/desktop-sata-cable-routing.jpg)
+> Orange and black SATA data cables routed from optical drive and HDD to motherboard. Proper cable management for airflow and serviceability.
+
+---
+
+### Dell Desktop — Optical Drive (SATA Side View)
+![Dell Optical SATA Side](photos/desktop-optical-sata-side.jpg)
+> Optical drive with "SATA POWER — SATA SIGNAL" labels clearly visible. Orange SATA data cable connected.
+
+---
+
+### Dell Desktop — Optical Drive (SATA Side View 2)
+![Dell Optical SATA Side 2](photos/desktop-optical-sata-side2.jpg)
+> Second angle of optical drive showing SATA label and cable management.
+
+---
+
+### Dell Desktop — Optical Drive (Top View)
+![Dell Optical SATA Top](photos/desktop-optical-sata-top.jpg)
+> Optical drive from above, SATA POWER and SATA SIGNAL labels visible. Wiring harness and chassis frame in background.
+
+---
+
+### Dell Desktop — Optical Drive Installation
+![Dell Optical Drive Install](photos/desktop-optical-drive-install.jpg)
+> Optical drive being installed into chassis slot. Tool-less bay mechanism guides the drive into position.
+
+---
+
+### Dell Desktop — Optical Drive Connector
+![Dell Optical Connector](photos/desktop-optical-drive-connector.jpg)
+> Optical drive being removed for inspection. SATA and power connectors visible at the rear of the drive.
+
+---
+
+### Dell Desktop — Drive Bay Mechanism
+![Dell Drive Bay](photos/desktop-drive-bay-mechanism.jpg)
+> Dell tool-less drive bay locking mechanism. Spring-loaded retention clips secure optical drives without screws.
+
+---
+
+### Dell Desktop — Chassis Bracket
+![Dell Chassis Bracket](photos/desktop-chassis-bracket.jpg)
+> Close-up of Dell's chassis mounting bracket and clip system. Precision stamped metal retention points for tool-less component installation.
+
+---
+
+### Dell Desktop — HDD Seagate in Caddy
+![Dell HDD Seagate Caddy](photos/desktop-hdd-seagate-caddy.jpg)
+> Seagate Barracuda 250GB HDD (7200 RPM SATA) mounted in Dell's blue plastic caddy. Drive snaps into chassis rail without tools.
+
+---
+
+### Dell Desktop — HDD Removal
+![Dell HDD Removal](photos/desktop-hdd-removal.jpg)
+> HDD being removed from chassis for inspection. Proper two-handed technique — supporting the drive during extraction.
+
+---
+
+### Dell Desktop — HDD and Optical from Above
+![Dell HDD Optical Top](photos/desktop-hdd-optical-top.jpg)
+> Top-down view: Seagate HDD in blue caddy (right), optical drive (left), with PSU wiring harness and SATA cables routed below.
+
+---
+
+### Dell Desktop — HDD Caddy Side View
+![Dell Caddy Side](photos/desktop-caddy-side.jpg)
+> Side view: optical drive bay, blue HDD caddy, and Samsung RAM stick visible. Shows layered component layout inside Dell tower chassis.
+
+---
+
+### Dell Desktop — Full Interior 1
+![Dell Interior Full 1](photos/desktop-interior-full1.jpg)
+> Complete Dell tower interior: motherboard, PSU (right), CPU cooler fan, and all cabling in final configuration before OS deployment.
+
+---
+
+### Dell Desktop — Full Interior 2
+![Dell Interior Full 2](photos/desktop-interior-full2.jpg)
+> Second Dell unit interior at slightly different angle. Dell motherboard branding visible. Ready for cable management and lid closure.
+
+---
+
+### Network Rack — Equipment
 ![Network Rack](photos/network-rack.jpg)
+> Rack-mounted network equipment: Allied Telesyn CentreCOM FH724SW (top), two Cisco 2500 Series units (middle), Cisco Catalyst 1900 (bottom, with active port LEDs).
 
 ---
 
 ### Network Rack — Labeled & Verified
-> Completed port verification and status labeling. Each unit tagged with operational status ("W ON", "ALL PORTS OK") and known issues ("Ports 4 8 12 off") for ongoing support reference.
-
 ![Network Rack Labeled](photos/network-rack-labeled.jpg)
+> Completed port verification with status labels: "Ports 4 8 12 off" (Allied Telesyn), "W ON" (Cisco 2500 x2), "ALL PORTS OK" (Catalyst 1900).
 
 ---
 
-### Additional Lab Equipment
-> 3D printing station, GoPro camera, and various hardware components — part of the broader Seahawk technology ecosystem.
-
+### Lab Equipment
 ![Lab Equipment](photos/lab-equipment.jpg)
+> 3D printing station with filament spool, misc hardware, label printer, and external drives — part of the Seahawk technology ecosystem.
 
 ---
 
 ### Drone / IoT Lab
-> FPV racing drones, consumer drones, and camera equipment maintained as part of the lab's IoT and embedded systems section.
-
 ![Drones](photos/drones.jpg)
+> FPV racing drones, consumer quadcopters, and camera-equipped drones maintained as part of the lab's IoT and embedded systems section.
+
+---
+
+### NEC V260 — Exterior
+![NEC Projector Exterior](photos/projector-exterior.jpg)
+> NEC NP-V260 DLP projector with top cover partially open. Lens, ventilation grills, and control panel visible. "HOT" caution label on chassis.
+
+---
+
+### NEC V260 — Top Panel (Lamp Compartment Open)
+![NEC Projector Top](photos/projector-nec-v260-top.jpg)
+> Top view with lamp door removed. Controls: Power, Status, Lamp indicators; Source, Auto Adj., Exit, Enter, Menu, Volume, Zoom/Focus. **LAMP TYPE: NP13LP** label confirmed.
+
+---
+
+### NEC V260 — Rear I/O Panel
+![NEC Projector Rear IO](photos/projector-rear-io.jpg)
+> Rear panel: Audio In, Computer In (VGA), Monitor Out (COMP), PC Control (RS-232), S-Video In, Video In, AC power. **Model: NP-V260 1601691EB — Manufactured June 2011.**
+
+---
+
+### NEC V260 — Lamp Assembly
+![NEC Lamp Assembly](photos/projector-lamp-assembly.jpg)
+> NP13LP lamp module fully removed from housing. Power connector visible at top. Complete lamp unit including reflector assembly.
+
+---
+
+### NEC V260 — Lamp Bulb Detail
+![NEC Lamp Bulb](photos/projector-lamp-bulb.jpg)
+> Hand holding the NP13LP lamp open showing arc bulb and reflector dish. NEC V260 visible in background with rear I/O panel exposed.
+
+---
+
+### NEC V260 — Lamp Door Cover
+![NEC Lamp Cover](photos/projector-lamp-cover.jpg)
+> Black plastic lamp door (back side shown). Caution labels: "CONTAINS MERCURY. DISPOSE ACCORDING TO LOCAL, STATE OR FEDERAL LAWS."
+
+---
+
+### NEC V260 — Full Interior (Main Board In)
+![NEC Projector Interior](photos/projector-interior.jpg)
+> NEC projector fully open with NEC main board installed. Lens assembly, two cooling fans, red/black wiring harness, and I/O board visible.
+
+---
+
+### NEC V260 — Full Interior (Board Removed)
+![NEC Projector Interior 2](photos/projector-interior2.jpg)
+> Projector chassis with main board removed. Optical engine, lens barrel, and color wheel housing exposed. I/O board still connected on right side.
+
+---
+
+### NEC V260 — Main DLP Board
+![NEC DLP Board](photos/projector-dlp-board.jpg)
+> NEC main PCB featuring **Texas Instruments DLP chipset** (DLP logo chip visible). NEC branding on board. Manages image processing, DMD chip drive, and power distribution.
+
+---
+
+### NEC V260 — I/O Board (Flat)
+![NEC IO Board Flat](photos/projector-io-board.jpg)
+> NEC I/O board laid flat. Handles all external connections: VGA in/out, RS-232, audio. Connects to main board via ribbon and edge connectors.
+
+---
+
+### NEC V260 — I/O Board (Held)
+![NEC IO Board Held](photos/projector-io-board-held.jpg)
+> I/O board being held during inspection. VGA port and DB-9 RS-232 connector visible from connector side.
+
+---
+
+### NEC V260 — Reassembly
+![NEC Reassembly](photos/projector-reassembly.jpg)
+> Projector during reassembly. Main board reinstalled, wiring reconnected, optical path intact. Ready for housing closure and function test.
 
 ---
 
@@ -209,108 +307,35 @@ This repository documents the work performed, technologies used, and lessons lea
 
 ```
 keiser-cyber-sprint/
-│
-├── README.md                      ← You are here
-├── photos/                        ← Lab documentation photos
-│   ├── hardware-workbench.jpg
-│   ├── computer-inventory.jpg
-│   ├── desktop-bench-assembly.jpg
-│   ├── desktop-interior-ram.jpg
-│   ├── desktop-motherboard-closeup.jpg
-│   ├── desktop-tower-full.jpg
-│   ├── lab-overview.jpg
-│   ├── network-rack.jpg
-│   ├── network-rack-labeled.jpg
-│   ├── projector-nec-v260-top.jpg
-│   ├── projector-rear-io.jpg
-│   ├── projector-exterior.jpg
-│   ├── projector-lamp-assembly.jpg
-│   ├── projector-lamp-bulb.jpg
-│   ├── projector-lamp-cover.jpg
-│   ├── projector-interior.jpg
-│   ├── projector-dlp-board.jpg
-│   ├── projector-io-board.jpg
-│   ├── projector-reassembly.jpg
-│   ├── lab-equipment.jpg
-│   └── drones.jpg
-│
+├── README.md
+├── photos/          ← 42 lab documentation photos
 └── docs/
-    ├── network-setup.md           ← Network configuration details
-    ├── hardware-deployment.md     ← PC assembly & deployment process
-    └── projector-repair.md        ← NEC V260 DLP repair documentation
+    ├── network-setup.md
+    ├── hardware-deployment.md
+    └── projector-repair.md
 ```
 
 ---
 
 ## 🎯 Skills Demonstrated
 
-- **Hardware (PCs):** Component-level Dell desktop assembly, BIOS/UEFI setup, RAM/CPU/HDD installation, PSU integration, OS deployment, hardware diagnostics
-- **Hardware (AV/Projectors):** Full DLP projector disassembly (NEC NP-V260), lamp replacement (NP13LP), board-level inspection (TI DLP chipset), optical path documentation, reassembly
-- **Networking:** Cisco switch configuration, DHCP/DNS setup, VLAN configuration, cabling, port status verification
-- **Safety:** ESD best practices (wrist strap, anti-static mat), mercury lamp handling per safety guidelines
-- **Documentation:** Technical write-ups, port status labeling, component inventory, troubleshooting guides
+- **Hardware (PCs):** Component-level Dell desktop assembly, BIOS/UEFI, RAM/CPU/HDD/optical drive installation, PSU integration, OS deployment, cable management
+- **Hardware (AV):** Full DLP projector disassembly (NEC NP-V260), NP13LP lamp replacement, board-level inspection (TI DLP chipset), optical path documentation, reassembly
+- **Networking:** Cisco switch configuration, DHCP/DNS, VLANs, physical cabling, port verification and labeling
+- **Safety:** ESD protocol, mercury lamp handling, compressed air cleaning
+- **Documentation:** Technical write-ups, port status labeling, component inventory
 
 ---
 
 ## 🎓 About the Program
 
-The Seahawk Cyber-Sprint is part of Keiser University's IT program in Tallahassee, FL — a hands-on initiative designed to give students real-world experience building and maintaining IT infrastructure. This project was completed in parallel with coursework toward an **Associate of Science in Information Technology**.
+The Seahawk Cyber-Sprint is a cybersecurity hackathon and IT infrastructure initiative at Keiser University, Tallahassee, FL — **September 11–13, 2026**. This volunteer work was completed as part of hands-on preparation for an **Associate of Science in Information Technology**.
 
 ---
 
 ## 📬 Contact
 
-**Leonardo da Silveira Moutinho**
-- 📧 leosilveira2009@gmail.com
-- 💼 [LinkedIn](https://linkedin.com/in/leonardomoutinho)
-- 🐙 [GitHub](https://github.com/leonardosmoutinho)
-
----
-
-### Dell Desktop — Optical Drive Installation
-> DVD/optical drive being removed and reinstalled. SATA POWER and SATA SIGNAL connectors clearly labeled on the drive bracket. Orange SATA data cable connected to motherboard. Blue HDD caddy visible alongside.
-
-![Dell Optical Drive](photos/desktop-optical-drive.jpg)
-
----
-
-### Dell Desktop — Drive Bay & Locking Mechanism
-> Close-up of Dell's tool-less drive bay locking bracket. Spring-loaded retention clips secure optical drives without screws — a common feature in Dell OptiPlex business-class systems.
-
-![Dell Drive Bay](photos/desktop-drive-bay-mechanism.jpg)
-
----
-
-### Dell Desktop — Seagate Barracuda HDD in Caddy
-> Seagate Barracuda 250GB HDD (7200 RPM, SATA) mounted in Dell's blue plastic caddy. Drive caddy snaps into chassis rail without tools. SATA data and power cables routed cleanly to motherboard and PSU.
-
-![Seagate HDD in Caddy](photos/desktop-hdd-seagate-caddy.jpg)
-
----
-
-### Dell Desktop — HDD Removal (Hands-On)
-> HDD being removed from chassis for inspection/replacement. Demonstrates proper component handling — supporting the drive from below, SATA cables disconnected before extraction.
-
-![Dell HDD Removal](photos/desktop-hdd-removal.jpg)
-
----
-
-### Dell Desktop — Alternate Motherboard (MS0520)
-> Second Dell motherboard model (Board ID: MS0520, Factory ID: J). CMOS password jumper visible (1-2: Clear Password / 2-3: Normal Default). Yellow front-panel connector, CMOS/RTC lithium battery, and multiple expansion slots. Shows familiarity working across multiple Dell hardware generations.
-
-![Dell MS0520 Board](photos/desktop-motherboard-ms0520.jpg)
-
----
-
-### Dell Desktop — Full Interior with SATA Cable Routing
-> Full interior view showing cable management: orange and black SATA data cables, multi-color PSU harness (24-pin ATX, 4-pin CPU, SATA power), front-panel connector bundle, and Dell motherboard. Demonstrates organized cable routing for airflow and serviceability.
-
-![Dell Interior Cable Routing](photos/desktop-sata-cable-routing.jpg)
-
----
-
-### Dell Desktop — Classroom Deployment Scale
-> Multiple Dell towers open simultaneously across classroom workbenches. Demonstrates the scale of the deployment — each unit processed individually through hardware inspection, cleaning, component verification, and OS deployment.
-
-![Classroom Deployment Scale](photos/desktop-classroom-scale.jpg)
-
+**Leonardo da Silveira Moutinho**  
+📧 leosilveira2009@gmail.com  
+💼 [LinkedIn](https://linkedin.com/in/leonardomoutinho)  
+🐙 [GitHub](https://github.com/leonardosmoutinho)
